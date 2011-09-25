@@ -1,4 +1,14 @@
 /* Global styles */
+#cart, #cart table{
+    font-size: smaller;
+    color: white;
+}
+
+#cart table{
+    border-top: 1px dotted #595;
+    border-bottom: 1px dotted #595;
+    margin-bottom: 10px;
+}
 #banner{
     background: #9c9;
     padding-top: 10px;
@@ -18,7 +28,7 @@
 }
 
 #main{
-    margin-left: 17em;
+    margin-left: 31em;
     padding-top: 4ex;
     padding-left: 2em;
     background: white;
@@ -29,7 +39,7 @@
     padding-top: 1em;
     padding-left: 1em;
     padding-bottom: 1em;
-    width: 16em;
+    width: 30em;
     background: #141;
 }
 
@@ -62,6 +72,18 @@
 }
 /* Styles for products/index */
 
+#store .cart_title {
+    font: 120% bold;
+}
+
+#store .item_price, #store .total_line{
+    text-align: right;
+}
+
+#store .total_line .total_cell {
+    font-weight: bold;
+    border-top: 1px solid #595;
+}
 #product_list table {
         border-collapse: collapse;
 }

@@ -15,7 +15,12 @@
   </div>
   <div id="columns">
     <div id="side">
-      <%= link_to 'Home', root_path %>
+      <% if @cart %>
+        <%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+          <%= render @cart %>
+        <% end %>  
+      <% end %>
+      <%= link_to 'Home', store_url %>
       <%= link_to 'Questions', '#' %>
       <%= link_to 'News', '#' %>
       <%= link_to 'Contact', '#' %>
@@ -24,6 +29,7 @@
   </div>
   <div id="main">
     <%= yield %>
+    <%= debug(params) if Rails.env.development? %>
   </div>
 </body>
 </html>
