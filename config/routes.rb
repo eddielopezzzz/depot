@@ -1,11 +1,12 @@
 Depot::Application.routes.draw do
-  get "store/index"
-  
+  resources :orders
   resources :line_items
   resources :carts
-  resources :products
-
-  #root :to => "store#index"
+  resources :products do
+    get :who_bought, :on => :member
+  end
+  
+  get "store/index"
   
   root :to => 'store#index', :as => 'store'
 end
