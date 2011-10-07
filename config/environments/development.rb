@@ -16,11 +16,24 @@ Depot::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.smtp_settings = {
+    :address => "smtp.live.com",
+    :port => 587,
+    :domain => "eddie.heroku.com",
+    :authentication => "plain",
+    :user_name => "eddielopezzzz@hotmail.com",
+    :password => "Kristian1",
+    :enable_starttls_auto => true
 
+  }
+  
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
 end
 
