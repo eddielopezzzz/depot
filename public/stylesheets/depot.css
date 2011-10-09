@@ -80,6 +80,11 @@
     font-size: small;
 }
 
+#side ul li{
+    list-style: none;
+    margin-left: -25px;
+}
+
 #time p {
     color: white;
 }
@@ -207,4 +212,9 @@
   color: #44a;
   font-weight: bold;
   margin-right: 2em;
+}
+
+.locale {
+    float: right;
+    margin: -0.25em 0.1em;
 }
