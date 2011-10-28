@@ -28,7 +28,25 @@
     <%= f.label :pay_type, t('.pay_type') %><br />
     <%= f.select :pay_type, Order::PAYMENT_TYPES, :prompt => t('.pay_prompt_html') %>
   </div>
-  <div class="actions">
+  <div class="field">
+    <%= f.label :creditcard, 'creditcard' %>
+    <%= f.text_field :creditcard, :size => 16 %>
+  </div>
+  <div class="field">
+    <%= f.label :month, 'month' %>
+    <%= f.text_field :month, :size => 2 %>
+  </div>
+  <div class="field">
+    <%= f.label :year, 'year' %>
+    <%= f.text_field :year, :size => 4 %>
+  </div>
+  <div class="field">
+    <%= f.label :verification_value, 'CVV' %>
+    <%= f.text_field :verification_value, :size => 3 %>
+  </div>
+
+ <div class="actions">
     <%= f.submit t('.submit')%>
   </div>
+
 <% end %>

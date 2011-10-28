@@ -9,3 +9,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'will_paginate', '>= 3.0.pre'
 
+gem 'activemerchant', '~> 1.10.0'
+
+gem 'haml', '~> 3.0.18'
+
+gem 'jquery-rails', '~> 0.2.2'
+

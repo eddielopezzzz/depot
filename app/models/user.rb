@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   attr_reader :password
   validate :password_must_be_present
   
-  def ensure _an_admin_remains
+  def ensure_an_admin_remains
     if User.count.zero?
       raise "Can't delete last user"
     end
