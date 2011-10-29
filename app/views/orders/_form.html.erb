@@ -34,7 +34,7 @@
   </div>
   <div class="field">
     <%= f.label :month, 'month' %>
-    <%= f.text_field :month, :size => 2 %>
+    <%= f.select :month, Order::MONTHS, :prompt => 'Month' %>
   </div>
   <div class="field">
     <%= f.label :year, 'year' %>

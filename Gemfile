@@ -13,5 +13,5 @@ gem 'activemerchant', '~> 1.10.0'
 
 gem 'haml', '~> 3.0.18'
 
-gem 'jquery-rails', '~> 0.2.2'
+gem 'jquery-rails', '>= 1.0.12'
 
